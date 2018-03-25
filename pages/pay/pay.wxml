@@ -1,0 +1,102 @@
+<view class='list-block '>
+  <ul>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title font-lg'>需支付</view>
+          <view class='item-after font-lg font-red'>¥800.00</view>
+        </view>
+      </view>
+    </li>
+     
+  </ul>
+</view>
+<view class='list-block mar-t-md'>
+  <ul>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title font-md font-grey'>选择支付方式</view>
+          
+        </view>
+      </view>
+    </li>
+     <li>
+      <view class='item-content'>
+        <view class='item-media'>  <view class='icon-pay-wechat mar-r-sm'></view></view>
+        <view class='item-inner'>
+          <view class='item-title font-md font-grey'>
+       
+          微信支付
+          </view>
+          <view class='item-after'> <view class='icon-checked'></view></view>
+        </view>
+      </view>
+    </li>
+     <li>
+      <view class='item-content'>
+        <view class='item-media'>  <view class='icon-pay-user mar-r-sm'></view></view>
+        <view class='item-inner'>
+          <view class='item-title font-md font-grey'>
+       
+          线下付款
+          </view>
+          <view class='item-after'> <view class='icon-unchecked'></view></view>
+        </view>
+      </view>
+    </li>
+  </ul>
+</view>
+<view class='list-block mar-t-md'>
+  <ul>
+  <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title font-md font-grey'>完善线下付款信息</view>
+          
+        </view>
+      </view>
+    </li>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title label font-lg'>付款金额</view>
+          <view class='item-input font-lg'>
+            <input type='text' placeholder='实际支付金额'></input>
+          </view>
+        </view>
+      </view>
+    </li>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title label font-lg'>付款方式</view>
+          <view class='item-input font-lg'>
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+          </view>
+        </view>
+      </view>
+    </li>
+    
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title label font-lg'>转账截图</view>
+          <view class='item-after'>
+            <view class='add-img'><icon class='icon-add-img'></icon></view>
+          </view>
+        </view>
+      </view>
+    </li>
+  </ul>
+</view>
+
+<view class='fixed-bottom-space'></view>
+<view class='fixed-bottom'>
+
+   <navigator url='/pages/paysuc/paysuc' class='btn btn-red btn-block'>立即支付</navigator>
+</view>

@@ -1,0 +1,47 @@
+<view class="search-box">
+  <view class='form-group'>
+    <input class="form-control input-icon input-grey input-circle" placeholder="搜索产品名或者编号" placeholder-class='font-grey-cararra' />
+    <icon class="icon-search"></icon>
+  </view>
+</view>
+<view class="type-select font-md font-grey">
+  <view bindtap="choiceItem" data-item="1">
+    <text>全部</text>
+    <view class="icon-down-grey"></view>
+  </view>
+  <view bindtap="choiceItem" data-item="2">
+    <text>智能排序</text>
+    <view class="icon-up-grey"></view>
+  </view>
+</view>
+<view class="list-block media-list product-list">
+  <ul>
+    <li>
+      <navigator hover-class='none' class='item-content' url='/pages/product/product'>
+        <view class='item-media'>
+          <image src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901" class='product-img-sm'></image>
+        </view>
+        <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-lg'>麦顿金典成犬15kg狗粮，促进骨骼消化</view>
+          </view>
+          <view class='item-subtitle'>
+            <view>
+              <text class='font-red font-lg'>¥50.00</text>
+              <text class='font-grey-steel pad-l-sm text-line-through font-xs'>¥78.00</text>
+            </view>
+            <view class='add-subtract'>
+              <view class='icon-product-minus'></view>
+              <view class='num'>1234</view>
+              <view class='icon-product-plus'></view>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </li>
+  </ul>
+</view>
+<navigator class='cart-box' url='/pages/cart/cart'>
+  <icon class='icon-cart'></icon>
+  <view class='cart-num'>5</view>
+</navigator>

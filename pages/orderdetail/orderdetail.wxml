@@ -1,0 +1,126 @@
+<view class="order-detail-bg">
+  <view class="font-md font-white mar-l-md">
+    <text class="icon-wancheng"></text> 交易成功
+  </view>
+</view>
+<view class="list-block media-list ">
+  <ul>
+    <li>
+      <view class='item-content' >
+      <view class='item-media'>
+        <icon class='icon-address'></icon>
+      </view>
+          
+          <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-lg'>王杰 152****2898</view>
+          </view>
+          <view class='item-text'>
+          辽宁省大连市高新园区招商兰溪谷北区7号楼4单元302
+          </view>
+     
+          </view>
+      </view>
+    </li>
+  </ul>
+</view>
+<view class='list-block media-list mar-t-md'>
+  <ul>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-md font-grey'>
+
+              <text>消费项目</text>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </li>
+    <navigator hover-class='none' url='/pages/orderdetail/orderdetail'>
+      <li>
+        <view class='item-content'>
+          <view class='item-media'>
+            <image src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901" class='product-img-xs'></image>
+          </view>
+          <view class='item-inner'>
+            <view class='item-title-row'>
+              <view class='item-title font-md font-black'>
+                麦顿金典成犬12kg狗粮，促进骨骼消化
+              </view>
+            </view>
+            <view class='item-title-row mar-t-md'>
+              <view class='item-title font-md font-black'>
+                ¥350
+                <text class='font-grey-steel font-sm text-lt mar-l-md'>$500</text>
+              </view>
+              <view class='item-after font-grey-steel font-md'>
+                x1
+              </view>
+            </view>
+          </view>
+        </view>
+      </li>
+      <li>
+        <view class='item-content'>
+          <view class='item-media'>
+            <image src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901" class='product-img-xs'></image>
+          </view>
+          <view class='item-inner'>
+            <view class='item-title-row'>
+              <view class='item-title font-md font-black'>
+                麦顿金典成犬12kg狗粮，促进骨骼消化
+              </view>
+
+            </view>
+            <view class='item-title-row mar-t-md'>
+              <view class='item-title font-md font-black'>
+                ¥350
+                <text class='font-grey-steel font-sm text-lt mar-l-md'>$500</text>
+              </view>
+              <view class='item-after font-grey-steel font-md'>
+                x1
+              </view>
+            </view>
+          </view>
+        </view>
+      </li>
+      <li>
+        <view class='item-content b-b-line'>
+          <view class='item-inner '>
+            <view class='item-title-row'>
+              <view class='item-titl'></view>
+              <view class='item-after font-md text-right'>共3件商品 实付款：¥1250.00</view>
+            </view>
+          </view>
+        </view>
+      </li>
+    </navigator>
+
+  </ul>
+</view>
+
+<view class='list-block media-list mar-t-md'>
+  <ul>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+         <view class='item-text'>订单编号：123456</view>
+          <view class='item-text'>创建时间：2018-03-07 14:11</view>
+          <view class='item-text'>付款时间：2018-03-08 14:11</view>
+ <view class='item-text'>发货时间：2018-03-08 14:11</view>
+ <view class='item-text'>成交时间：2018-03-08 14:11</view>
+           
+        </view>
+      </view>
+    </li>
+    
+  </ul>
+</view>
+<view class='fixed-bottom-space'></view>
+<view class='fixed-bottom'>
+ <navigator url='/pages/pay/pay' class='btn btn-green btn-block'>确认收货</navigator>
+   <navigator url='/pages/pay/pay' class='btn btn-red btn-block'>付款</navigator>
+</view>

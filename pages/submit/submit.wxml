@@ -1,0 +1,103 @@
+<view class="list-block media-list ">
+  <ul>
+    <li>
+      <navigator url='/pages/address/address'   class='item-content item-link' >
+      <view class='item-media'>
+        <icon class='icon-address'></icon>
+      </view>
+          
+          <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-lg'>王杰 152****2898</view>
+          </view>
+          <view class='item-text'>
+          辽宁省大连市高新园区招商兰溪谷北区7号楼4单元302
+          </view>
+     
+          </view>
+      </navigator>
+    </li>
+  </ul>
+</view>
+<view class="list-block media-list product-list mar-t-md">
+  <ul>
+    <li>
+      <navigator hover-class='none' class='item-content' url='/pages/product/product'>
+          <view class='item-media'>
+          <image src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901" class='product-img-sm'></image>
+          </view>
+          <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-lg'>麦顿金典成犬15kg狗粮，促进骨骼消化</view>
+          </view>
+          <view class='item-subtitle'>
+          <view>
+            <text class='font-red font-lg'>¥50.00</text>
+            <text class='font-grey-steel pad-l-sm text-line-through font-xs'>¥78.00</text>
+            </view>
+            <view class='add-subtract'>
+            
+              <view class='num'>x1</view>
+            
+            </view>
+          </view>
+     
+          </view>
+      </navigator>
+    </li>
+     <li>
+      <navigator hover-class='none' class='item-content' url='/pages/product/product'>
+          <view class='item-media'>
+          <image src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901" class='product-img-sm'></image>
+          </view>
+          <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-lg'>麦顿金典成犬15kg狗粮，促进骨骼消化</view>
+          </view>
+          <view class='item-subtitle'>
+          <view>
+            <text class='font-red font-lg'>¥50.00</text>
+            <text class='font-grey-steel pad-l-sm text-line-through font-xs'>¥78.00</text>
+            </view>
+            <view class='add-subtract'>
+            
+              <view class='num'>x1</view>
+            
+            </view>
+          </view>
+     
+          </view>
+      </navigator>
+    </li>
+  </ul>
+</view>
+<view class='list-block mar-t-md'>
+  <ul>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title font-lg'>商品金额</view>
+          <view class='item-after font-lg font-red'>¥800.00</view>
+        </view>
+      </view>
+    </li>
+     <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title font-lg'>运费</view>
+          <view class='item-after font-lg font-red'>+¥10.00</view>
+        </view>
+      </view>
+    </li>
+  </ul>
+</view>
+<view class='fixed-bottom-space'></view>
+<view class='fixed-bottom'>
+<view class='cart-sum'>
+  
+  
+    <text class='font-grey-gallery font-md mar-l-xlg font-red'>实付款：</text>
+    <text class='font-orange font-xlg font-red'>¥ 300</text>
+  </view>
+   <navigator url='/pages/pay/pay' class='btn btn-green'>提交订单</navigator>
+</view>

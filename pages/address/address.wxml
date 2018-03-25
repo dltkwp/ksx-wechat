@@ -1,0 +1,84 @@
+
+<view class="list-block media-list">
+  <ul>
+    <li>
+      <view class='item-content ' >
+     
+          <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-lg'>王杰 152****2898</view>
+          </view>
+          <view class='item-text'>
+          辽宁省大连市高新园区招商兰溪谷北区7号楼4单元302
+          </view>
+     
+          </view>
+      </view>
+    </li>
+    <li>
+      <view class='item-content ' >
+          <view class='item-inner'>
+          <view class='item-title-row'>
+         
+            <view class='item-title font-md font-grey button'> <icon class='icon-checked'></icon>默认地址</view>
+              <view class='item-after'>
+              <navigator hover-class='none' class='button' url='/pages/editadd/editadd'>
+                <icon class='icon-edit'></icon>
+                <text class='font-md font-grey-steel mar-r-md'>编辑</text>
+              </navigator>
+              <view class='button'>
+                <icon class='icon-rubbish'></icon>
+                <text class='font-md font-grey-steel'>删除</text>
+              </view>
+            </view>
+          </view>
+          </view>
+      </view>
+    </li>
+  </ul>
+</view>
+
+<view class="list-block media-list mar-t-md">
+  <ul>
+    <li>
+      <view class='item-content ' >
+     
+          <view class='item-inner'>
+          <view class='item-title-row'>
+            <view class='item-title font-lg'>王杰 152****2898</view>
+          </view>
+          <view class='item-text'>
+          辽宁省大连市高新园区招商兰溪谷北区7号楼4单元302
+          </view>
+     
+          </view>
+      </view>
+    </li>
+    <li>
+      <view class='item-content ' >
+          <view class='item-inner'>
+          <view class='item-title-row'>
+         
+            <view class='item-title font-md font-grey button'> <icon class='icon-unchecked'></icon>设为默认</view>
+              <view class='item-after'>
+              <navigator hover-class='none' class='button' url='/pages/editadd/editadd'>
+                <icon class='icon-edit'></icon>
+                <text class='font-md font-grey-steel mar-r-md'>编辑</text>
+              </navigator>
+              <view class='button'>
+                <icon class='icon-rubbish'></icon>
+                <text class='font-md font-grey-steel'>删除</text>
+              </view>
+            </view>
+          </view>
+          </view>
+      </view>
+    </li>
+  </ul>
+</view>
+
+<view class='fixed-bottom-space'></view>
+<view class='fixed-bottom'>
+
+   <navigator url='/pages/addaddress/addaddress' class='btn btn-red btn-block'>新建地址</navigator>
+</view>

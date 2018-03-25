@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/discovery/discovery",
+    "pages/more/more",
+    "pages/product/product",
+    "pages/cart/cart",
+    "pages/submit/submit",
+    "pages/address/address",
+    "pages/addaddress/addaddress",
+    "pages/pay/pay",
+    "pages/intro/intro",
+    "pages/info/info",
+    "pages/order/order",
+    "pages/custom/custom",
+    "pages/invite/invite",
+    "pages/orderlist/orderlist",
+    "pages/orderdetail/orderdetail",
+    "pages/join/join",
+    "pages/joinsuc/joinsuc"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "派多格",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#fff9fa",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ed768f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav_home_normal.png",
+        "selectedIconPath": "images/nav_home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "iconPath": "images/nav_discovery_normal.png",
+        "selectedIconPath": "images/nav_discovery_active.png",
+        "text": "发现"
+      },
+     
+      {
+        "pagePath": "pages/more/more",
+        "iconPath": "images/nav_more_normal.png",
+        "selectedIconPath": "images/nav_more_active.png",
+        "text": "更多"
+      }
+    ]
+  },
+  "debug": true
+}

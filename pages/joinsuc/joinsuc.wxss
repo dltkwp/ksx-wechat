@@ -1,0 +1,4 @@
+/* pages/joinsuc/joinsuc.wxss */
+page{
+  background:#fff;
+}

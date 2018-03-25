@@ -1,0 +1,35 @@
+<view class='list-block'>
+  <ul>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title label font-lg'>收货人</view>
+          <view class='item-input font-lg'>
+            <input type='text' placeholder='姓名' auto-focus></input>
+          </view>
+        </view>
+      </view>
+    </li>
+     <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title label font-lg'>联系电话</view>
+          <view class='item-input font-lg'>
+            <input type='text' placeholder='电话'></input>
+          </view>
+        </view>
+      </view>
+    </li>
+    <li>
+      <view class='item-content'>
+        <view class='item-inner'>
+          <view class='item-title label font-lg'>收货地址</view>
+          <view class='item-input font-lg'>
+            <textarea bindblur="bindTextAreaBlur" auto-height placeholder="收货地址" />
+          </view>
+        </view>
+      </view>
+    </li>
+  </ul>
+</view>
+<view class='btn-full btn-green btn'>提交</view>

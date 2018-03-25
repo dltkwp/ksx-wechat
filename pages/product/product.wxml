@@ -1,0 +1,39 @@
+<view class='swiper-container'>
+  <swiper class="swiper-box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class='item bg-white pad-md'>
+  <view class='font-lg font-black'>店长专业级别理发店长专业级别理发店长专业级 别理发
+  </view>
+
+  <view class='font-xlg font-red'>
+    <text class='font-md pad-r-xs'>¥</text>5000
+    <text class='font-md text-line-through font-grey-steel'>¥7000</text>
+  </view>
+  <view class='font-md font-grey-steel'>
+    每人限购一件，所有消费到店请提前出示验证码或告知手机号，最终解释权归本店所有
+  </view>
+
+</view>
+<view class='title-item mar-t-md'>
+  <view class='title-text'>详情</view>
+</view>
+<view class='item bg-white'>
+    <view class='pad-md font-md font-black'>文字内容显示区域</view>
+    <image class='product-img-full' src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901"></image>
+    <image class='product-img-full' src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901"></image>
+    <image class='product-img-full' src="https://cdns.mtscrm.com/FvIo6tSOUwUJxl0ilLV270HClddK?version=2017091901"></image>
+</view>
+<view class='fixed-bottom-space'></view>
+<view class='fixed-bottom'>
+  <navigator url='/pages/cart/cart' hover-class='none' class='bottom-icon'> <view class='cart-num'>5</view><icon class='icon-cart-grey'></icon>
+  <text class='font-xs font-grey-steel'>购物车</text>
+  </navigator>
+  <view class='btn btn-green-outline'>加入购物车</view>
+   <navigator url='/pages/submit/submit'  class='btn btn-green'>立即购买</navigator>
+</view>

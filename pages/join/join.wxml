@@ -1,0 +1,53 @@
+
+<view class='list-block mar-t-md'>
+  <ul>
+    <li>
+      <view class='item-content b-l-green'>
+        <view class='item-inner  '>
+          <view class='item-title font-md font-grey'>加盟成为分销商，可享受对应折扣进货</view>
+          
+        </view>
+      </view>
+    </li>
+     <li>
+      <view class='item-content'>
+        <view class='item-media mar-r-md'>  <view class='icon-checked'></view></view>
+        <view class='item-inner'>
+          <view class='item-title font-md font-grey'>
+       
+          一级分销商（75折）
+          </view>
+         <view class='item-after font-md font-red'>¥1000</view>
+        </view>
+      </view>
+    </li>
+     <li>
+      <view class='item-content'>
+        <view class='item-media mar-r-md'>  <view class='icon-unchecked'></view></view>
+        <view class='item-inner'>
+          <view class='item-title font-md font-grey'>
+       
+          二级分销商（8折）
+          </view>
+         <view class='item-after font-md font-red'>¥500</view>
+        </view>
+      </view>
+    </li>
+     <li>
+      <view class='item-content'>
+        <view class='item-media mar-r-md'>  <view class='icon-unchecked'></view></view>
+        <view class='item-inner'>
+          <view class='item-title font-md font-grey'>
+       
+          三级分销商（9折）
+          </view>
+         <view class='item-after font-md font-red'>¥100</view>
+        </view>
+      </view>
+    </li>
+  </ul>
+</view>
+<view class='pad-md font-md font-grey-steel'>
+  *加盟成为分销商后，将享有默认分销商折扣，个别商品以供应商实际定价为准
+</view>
+<navigator hover-class='none' url='/pages/joinsuc/joinsuc' class='btn-full btn-green btn'>立即加盟</navigator>
