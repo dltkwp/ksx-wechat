@@ -1,50 +1,36 @@
 var app = getApp()
 Page({
   data: {
-    /** 
-        * 页面配置 
-        */
-   
-    // tab切换  
     currentTab: 0,
+    custormId: 0
   },
-  onLoad: function () {
-    var that = this;
-
-    /** 
-     * 获取系统信息 
-     */
+  list: function(){
+    
+  },
+  onLoad: function (option) {
+    var _this = this;
+    _this.setData({
+      customId: option.customId
+    })
     wx.getSystemInfo({
-
       success: function (res) {
-        that.setData({
+        _this.setData({
           winWidth: res.windowWidth,
           winHeight: res.windowHeight
         });
       }
-
     });
   },
-  /** 
-     * 滑动切换tab 
-     */
   bindChange: function (e) {
-
-    var that = this;
-    that.setData({ currentTab: e.detail.current });
-
+    var _this = this;
+    _this.setData({ currentTab: e.detail.current });
   },
-  /** 
-   * 点击tab切换 
-   */
   swichNav: function (e) {
-
-    var that = this;
-
+    var _this = this;
     if (this.data.currentTab === e.target.dataset.current) {
       return false;
     } else {
-      that.setData({
+      _this.setData({
         currentTab: e.target.dataset.current
       })
     }

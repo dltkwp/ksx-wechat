@@ -1,32 +1,12 @@
 <view class="list-block media-list ">
   <ul>
-    <li>
-      <navigator url='/pages/orderlist/orderlist'   class='item-content item-link' >
-      <view class='item-media'>
-          <image src="" class='user-img-sm'></image>
-      </view>
-          <view class='item-inner'>
-            <view class='item-title font-lg'>王杰 15242612898</view>
+    <li wx:for="{{list}}" wx:key="index">
+        <navigator url='/pages/orderlist/orderlist?customId={{item.id}}'   class='item-content item-link' >
+          <view class='item-media'>
+              <image src="" class='user-img-sm'></image>
           </view>
-      </navigator>
-    </li>
-     <li>
-      <navigator url='/pages/orderlist/orderlist'   class='item-content item-link' >
-      <view class='item-media'>
-          <image src="" class='user-img-sm'></image>
-      </view>
           <view class='item-inner'>
-            <view class='item-title font-lg'>王杰 15242612898</view>
-          </view>
-      </navigator>
-    </li>
-     <li>
-      <navigator url='/pages/orderlist/orderlist'   class='item-content item-link' >
-      <view class='item-media'>
-          <image src="" class='user-img-sm'></image>
-      </view>
-          <view class='item-inner'>
-            <view class='item-title font-lg'>王杰 15242612898</view>
+            <view class='item-title font-lg'>{{item.realname}} {{item.recipientsPhone}}</view>
           </view>
       </navigator>
     </li>

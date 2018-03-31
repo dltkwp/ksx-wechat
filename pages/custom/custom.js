@@ -1,65 +1,48 @@
-// pages/custom/custom.js
+let util = require('../../utils/util')
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    list: []
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  normalList: function(){
+    let _this = this;
+    util.ajax({
+      method: 'GET',
+      url: 'v1/paypluses',
+      success: function (res) {
+        let data = res.data;
+        _this.setData({
+          list: data
+        })
+      }
+    });
+  },
   onLoad: function (options) {
-  
+    let _this = this;
+    let list = { "pageNum": 1, "pageSize": 15, "size": 2, "startRow": 1, "endRow": 2, "total": 2, "pages": 1, "list": [{ "id": 3, "username": "13478659803", "realname": "顾客1", "recipientsPhone": "13478659803", "recipientsAddress": "我的地址新", "comment": "备注程度啊", "sumOrder": 0, "sumPay": null }, { "id": 4, "username": "13478659804", "realname": "顾客2", "recipientsPhone": "13478659804", "recipientsAddress": "我的地址得治大劳动节阿莱克斯的放假啦开始的分类考试的", "comment": "史蒂夫哇额玩儿为玩儿为", "sumOrder": 0, "sumPay": null }], "prePage": 0, "nextPage": 0, "isFirstPage": true, "isLastPage": true, "hasPreviousPage": false, "hasNextPage": false, "navigatePages": 8, "navigatepageNums": [1], "navigateFirstPage": 1, "navigateLastPage": 1, "firstPage": 1, "lastPage": 1 };
+    _this.setData({
+      list:list.list
+    })
+    //_this.normalList();
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
   
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
   
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
   onHide: function () {
   
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
   onUnload: function () {
   
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
   onPullDownRefresh: function () {
   
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
   onReachBottom: function () {
   
   },
-
-  /**
-   * 用户点击右上角分享
-   */
   onShareAppMessage: function () {
   
   }
