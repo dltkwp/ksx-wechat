@@ -3,6 +3,10 @@ let ksx = {}
 // 全局变量处理
 ksx.baseUrl = '';
 
+ksx.pattern = {
+  mobile: /^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/
+};
+
 //获取OpenId
 ksx.getOpenId = function (callback) {
   wx.login({
