@@ -17,7 +17,7 @@ Page({
       success: function (res) {
         let data = res.data;
         _this.setData({
-          list: data
+          list: data           
         })
       }
     });

@@ -1,7 +1,7 @@
 let ksx = {}
 
 // 全局变量处理
-ksx.baseUrl = '';
+ksx.baseUrl = 'http://39.106.65.215:8081/EasyTime/';
 
 ksx.pattern = {
   mobile: /^(((13[0-9]{1})|(14[0-9]{1})|(15[0-9]{1})|(17[0-9]{1})|(18[0-9]{1}))+\d{8})$/
@@ -56,6 +56,7 @@ ksx.message = function (_opt) {
 
 
 ksx.getLoginAuth = function () {
+  wx.setStorageSync('ksx-login-token',' fea4bc27-accb-4af6-9740-537ad3e1799c')
   return wx.getStorageSync('ksx-login-token')
 }
 //封装ajax

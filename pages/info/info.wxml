@@ -17,7 +17,7 @@
           <view class='item-inner'>
             <view class='item-title label font-lg'>手机号</view>
             <view class='item-input font-lg'>
-              <input type='text' placeholder='手机号' name="username" value='{{userInfo.username}}' maxlength='11'></input>
+              <input type='text' placeholder='手机号' name="username" disabled readonly value='{{userInfo.username}}' maxlength='11'></input>
             </view>
           </view>
         </view>

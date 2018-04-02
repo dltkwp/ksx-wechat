@@ -1,52 +1,124 @@
+let util = require('../../utils/util')
+
 var app = getApp()
 Page({
   data: {
-    /** 
-        * 页面配置 
-        */
-   
-    // tab切换  
     currentTab: 0,
+
+    pageNo: 1,
+    pageSize: 10,
+    loadOver: false,
+    isloading: true,
+    status: '',
+    payType: ''
+  },
+  list: function () {
+    let _this = this;
+    let param = {
+      pageNum: _this.data.pageNo,
+      pageSize: _this.data.pageSize,
+      isSupplier: false
+    }
+
+    if(_this.data.status){
+      param.status = _this.data.status;
+    }
+    if(_this.data.payType){
+      param.payType = _this.data.payType;
+    }
+
+    console.log(param)
+
+    return false;
+
+    util.ajax({
+      method: 'GET',
+      url: 'orders',
+      data: param,
+      success: function (res) {
+        let data = res.data.list;
+        let temp = [];
+        if (_this.data.pageNo == 1) {
+          temp = data;
+        } else if (_this.data.pageNo > 1) {
+          temp = _this.data.productList.concat(data);
+        }
+        if (data.length < _this.data.pageSize) {
+          _this.setData({ loadOver: true });
+        }
+        _this.setData({ pageNo: _this.data.pageNo + 1 });
+
+        _this.setData({
+          productList: temp,
+          isloading: false
+        });
+      }
+    });
+  },
+  onReachBottom: function () {
+    if (!this.data.loadOver) {
+      this.setData({
+        loadOver: false
+      })
+      this.list();
+    }
   },
   onLoad: function () {
-    var that = this;
-
-    /** 
-     * 获取系统信息 
-     */
+    var _this = this;
     wx.getSystemInfo({
-
       success: function (res) {
-        that.setData({
+        _this.setData({
           winWidth: res.windowWidth,
           winHeight: res.windowHeight
         });
       }
-
     });
+     _this.list();
   },
-  /** 
-     * 滑动切换tab 
-     */
   bindChange: function (e) {
-
-    var that = this;
-    that.setData({ currentTab: e.detail.current });
-
+    var _this = this;
+    _this.setData({ currentTab: e.detail.current });
   },
-  /** 
-   * 点击tab切换 
-   */
   swichNav: function (e) {
-
-    var that = this;
-
+    var _this = this;
     if (this.data.currentTab === e.target.dataset.current) {
       return false;
     } else {
-      that.setData({
+      _this.setData({
         currentTab: e.target.dataset.current
       })
     }
+
+    switch (e.target.dataset.current){
+      case '0': { 
+        _this.setData({
+          status:'',
+          payType:'',
+          pageNo:1
+        })
+      } break;
+      case '1': { 
+        _this.setData({
+          status: '',
+          payType: 'check',
+          pageNo:1
+        })
+      } break;
+      case '2': { 
+        _this.setData({
+          status: 'WAIT',
+          payType: '',
+          pageNo:1
+        })
+      } break;
+      case '3': { 
+        _this.setData({
+          status: 'DELIVERY',
+          payType: '',
+          pageNo:1
+        })
+      } break;
+    }
+    _this.list();
   }
 })  
