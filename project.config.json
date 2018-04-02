@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 5,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -66,6 +66,18 @@
 					"id": -1,
 					"name": "我的订单",
 					"pathName": "pages/order/order",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "地址管理--列表",
+					"pathName": "pages/address/address",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "地址管理--新增地址",
+					"pathName": "pages/addaddress/addaddress",
 					"query": ""
 				}
 			]
